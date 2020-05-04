@@ -12,7 +12,6 @@ class Planeteer extends React.Component {
             <p className="card__text">{"CONDITIONALLY RENDER BIO OR QUOTE"}</p>
             <div className="card__detail">
               <p>{"RENDER TWITTER HANDLE"}</p>
-              <p>Age: {"RENDER THE AGE OF THE PERSON"}</p>
               <p>{"CONDITIONALLY RENDER WHETHER THE PERSON IS USA-BASED OR WORKING OVERSEAS"}</p>
             </div>
           </div>
