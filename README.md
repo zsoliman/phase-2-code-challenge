@@ -21,6 +21,12 @@ These are the endpoints you might need:
 - POST: `/planeteers`
 - DELETE: `/planeteers/:id`
 
+## What You Already Have
+
+The `App` component holds four children: `Header`, `SearchBar`, `RandomButton`, and `PlaneteersContainer`. `Header`, `SearchBar`, and `RandomButton` are presentational components in the beginning. The `PlaneteersContainer` component will render all `Planeteer` components.
+
+All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; however, if your finished product has some styling issues, don't worry too much about it.
+
 ## Deliverables
 
 1. When our React application is mounted, it should render out the list of Planeteers on the page, using the given Planeteer component.
