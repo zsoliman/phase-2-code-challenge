@@ -4,22 +4,12 @@ Captain Planet needs our help! With everything that's going on in the world toda
 
 ## Setup
 
-In our React application, the data about the new generation of Planeteers is in the `db.json` file. To mimic an API, we'll need to fire up a `json-server` using the following command:
+After cloning down the project:
 
-```
-  json-server -p 4000 --watch db.json
-```
+1. Run `npm install` in your terminal.
+2. Run `npm start`. This will open both your your backend on port `4000` and your React app on port `3000`.
 
-This command will fire up a `json-server` at 'http://localhost:4000' and following RESTful conventions, the list of our Planeteers can be found at 'http://localhost:4000/planeteers'.
-
-After firing up our `json-server`, let's start our React application by running the following command:
-
-```
-  npm install && npm start
-```
-
-This command will download any Node Package we'll need as well as fire up our React server at 'http://localhost:3000'.
-
+In our React application, the data about the new generation of Planeteers is in the `db.json` file. This file will mimic an API that follows RESTful conventions.
 
 ## Deliverables
 
