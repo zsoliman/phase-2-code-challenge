@@ -11,6 +11,16 @@ After cloning down the project:
 
 In our React application, the data about the new generation of Planeteers is in the `db.json` file. This file will mimic an API that follows RESTful conventions.
 
+## Endpoints
+
+The base URL for your backend is: `http://localhost:4000`
+
+These are the endpoints you might need:
+
+- GET: `/planeteers`
+- POST: `/planeteers`
+- DELETE: `/planeteers/:id`
+
 ## Deliverables
 
 1. When our React application is mounted, it should render out the list of Planeteers on the page, using the given Planeteer component.
