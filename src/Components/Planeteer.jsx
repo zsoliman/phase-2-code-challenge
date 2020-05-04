@@ -15,7 +15,6 @@ class Planeteer extends React.Component {
               <p>Age: {"RENDER THE AGE OF THE PERSON"}</p>
               <p>{"CONDITIONALLY RENDER WHETHER THE PERSON IS USA-BASED OR WORKING OVERSEAS"}</p>
             </div>
-            {/* DELIVERABLE 5 */}
           </div>
         </div>
       </li>
