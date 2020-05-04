@@ -19,7 +19,6 @@ These are the endpoints you might need:
 
 - GET: `/planeteers`
 - POST: `/planeteers`
-- DELETE: `/planeteers/:id`
 
 ## What You Already Have
 
