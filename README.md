@@ -19,6 +19,7 @@ These are the endpoints you might need:
 
 - GET: `/planeteers`
 - POST: `/planeteers`
+- DELETE: `/planeteers/:id`
 
 ## What You Already Have
 
@@ -34,6 +35,8 @@ As a user, I should be able to:
 - Click on the image of the planeteer in the `Planeteer` component and see the quote for that planeteer in place of the bio. If I click on the image again, the quote should again be replaced with the bio. If I click on another planeteer's image, it toggles that planeteer's bio independent of any other planeteer's.
 - Type in the `SearchBar` component and see the list of planeteers whose name or bio match the text in the search bar. If there's no text in the search bar, all the planeteers should be rendered.
 
+![Planeteers core deliverables](public/planeteers-core-deliverables.gif)
+
 ## Advanced Deliverables
 
 These deliverables are not required to pass the code challenge, but if you have the extra time, or even after the code challenge, they are a great way to stretch your skills.
@@ -45,6 +48,8 @@ As a user, I should be able to:
 - See the age of the planeteer in the `Planeteer` component (To calculate the age, first figure out how to get the current year in JavaScript and then subtract the planeteer's birth year from it.)
 - Click the `RandomButton` to render a random planeteer to the list of planeteers on the page. Additionally, the new random planeteer should be persisted to the database.
 - Click on a checkbox in the `SearchBar` component that, when checked, sorts the planeteers in the `PlaneteersContainer` from youngest to oldest. When unchecked, the planeteers should be sorted by ID. When viewing a filtered list of planeteers, the sort should only sort the filtered list.
+
+![Planeteers advanced deliverables](public/planeteers-advanced-deliverables.gif)
 
 ## Rubric
 
