@@ -7,7 +7,7 @@ Captain Planet needs our help! With everything that's going on in the world toda
 After cloning down the project:
 
 1. Run `npm install` in your terminal.
-2. Run `npm start`. This will open both your your backend on port `4000` and your React app on port `3000`.
+2. Run `npm start`. This will open both your backend on port `4000` and your React app on port `3000`.
 
 In our React application, the data about the new generation of Planeteers is in the `db.json` file. This file will mimic an API that follows RESTful conventions.
 
