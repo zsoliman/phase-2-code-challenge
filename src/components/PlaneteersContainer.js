@@ -1,16 +1,13 @@
 import React from 'react';
 import Planeteer from './Planeteer'
 
-const PlaneteersContainer = () => {
+function PlaneteersContainer() {
 
   return (
     <ul className="cards">
-      {
-        "Render Planeteers here"
-      }
+      {"Render Planeteers here"}
     </ul>
   )
-
 };
 
 export default PlaneteersContainer;
