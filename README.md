@@ -7,19 +7,21 @@ and it is our job to help their organize their data!
 
 ## Setup
 
-After cloning down the project:
+After unbundling the project:
 
 1. Run `npm install` in your terminal.
-2. Run `npm start`. This will open both your backend on port `4000` and your
-   React app on port `3000`.
+2. Run `npm run server`. This will run your backend on port `8003`.
+3. Run `npm start`. This will run your React app on port `8000`.
 
 In our React application, the data about the new generation of Planeteers is in
 the `db.json` file. This file will mimic an API that follows RESTful
 conventions.
 
+Make sure to open [http://localhost:8003/planeteers](http://localhost:8003/planeteers) in the browser to verify that your backend is working before you proceed!
+
 ## Endpoints
 
-The base URL for your backend is: `http://localhost:4000`
+The base URL for your backend is: `http://localhost:8003`
 
 These are the endpoints you might need:
 
