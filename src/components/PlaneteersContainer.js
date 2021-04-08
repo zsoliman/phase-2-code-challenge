@@ -1,13 +1,12 @@
-import React from 'react';
-import Planeteer from './Planeteer'
+import React from "react";
+import Planeteer from "./Planeteer";
 
 function PlaneteersContainer() {
-
   return (
     <ul className="cards">
-      {"Render Planeteers here"}
+      {/* render a list of <Planeteer> components in here */}
     </ul>
-  )
-};
+  );
+}
 
 export default PlaneteersContainer;

@@ -1,11 +1,10 @@
-import React from 'react';
-import { getRandomPlaneteer } from '../data/planeteers'
+import React from "react";
+import { getRandomPlaneteer } from "../data/planeteers";
 
 function RandomButton() {
-
   function handleClick() {
-    const randomPlaneteer = getRandomPlaneteer()
-    console.log(randomPlaneteer)
+    const randomPlaneteer = getRandomPlaneteer();
+    console.log("For the advanced deliverables", randomPlaneteer);
   }
 
   return (
@@ -14,7 +13,7 @@ function RandomButton() {
         Click to Add a Random Planeteer
       </button>
     </div>
-  )
+  );
 }
 
 export default RandomButton;

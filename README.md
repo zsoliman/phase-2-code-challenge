@@ -11,13 +11,15 @@ After unbundling the project:
 
 1. Run `npm install` in your terminal.
 2. Run `npm run server`. This will run your backend on port `8003`.
-3. Run `npm start`. This will run your React app on port `8000`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
 In our React application, the data about the new generation of Planeteers is in
 the `db.json` file. This file will mimic an API that follows RESTful
 conventions.
 
-Make sure to open [http://localhost:8003/planeteers](http://localhost:8003/planeteers) in the browser to verify that your backend is working before you proceed!
+Make sure to open
+[http://localhost:8003/planeteers](http://localhost:8003/planeteers) in the
+browser to verify that your backend is working before you proceed!
 
 ## Endpoints
 
@@ -83,8 +85,3 @@ As a user, I should be able to:
   of planeteers, the sort should only sort the filtered list.
 
 ![Planeteers advanced deliverables](demos/planeteers-advanced-deliverables.gif)
-
-## Rubric
-
-You can find the rubric for this assessment
-[here](https://github.com/learn-co-curriculum/se-rubrics/blob/master/module-4.md).
