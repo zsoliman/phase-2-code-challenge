@@ -21,16 +21,6 @@ Make sure to open
 [http://localhost:8003/planeteers](http://localhost:8003/planeteers) in the
 browser to verify that your backend is working before you proceed!
 
-## Endpoints
-
-The base URL for your backend is: `http://localhost:8003`
-
-These are the endpoints you might need:
-
-- GET: `/planeteers`
-- POST: `/planeteers`
-- DELETE: `/planeteers/:id`
-
 ## What You Already Have
 
 The `App` component holds four children: `Header`, `SearchBar`, `RandomButton`,
@@ -62,6 +52,37 @@ As a user, I should be able to:
 
 ![Planeteers core deliverables](demos/planeteers-core-deliverables.gif)
 
+### Endpoints for Core Deliverables
+
+#### GET /planeteers
+
+Example Response:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Xiuhtezcatl Martinez",
+    "fromUSA": true,
+    "born": 2000,
+    "bio": "While Xiuhtezcatl started ...",
+    "quote": "My father taught me ...",
+    "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/XMartinez.gif",
+    "twitter": "@xiuhtezcatl"
+  },
+  {
+    "id": 2,
+    "name": "Vic Barrett",
+    "fromUSA": true,
+    "born": 2000,
+    "bio": "Vic is from low-lying land ...",
+    "quote": "The journey of looking at ...",
+    "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/vic.jpg",
+    "twitter": "@vict_barrett"
+  }
+]
+```
+
 ## Advanced Deliverables
 
 These deliverables are not required to pass the code challenge, but if you have
@@ -85,3 +106,44 @@ As a user, I should be able to:
   of planeteers, the sort should only sort the filtered list.
 
 ![Planeteers advanced deliverables](demos/planeteers-advanced-deliverables.gif)
+
+### Endpoints for Advanced Deliverables
+
+#### POST `/planeteers`
+
+Required Headers:
+
+```js
+{
+  "Content-Type": "application/json"
+}
+```
+
+Request Object:
+
+```json
+{
+  "name": "string",
+  "fromUSA": boolean,
+  "born": number,
+  "bio": "string",
+  "quote": "string",
+  "pictureUrl": "string",
+  "twitter": "string"
+}
+```
+
+Example Response:
+
+```json
+{
+  "id": 1,
+  "name": "Xiuhtezcatl Martinez",
+  "fromUSA": true,
+  "born": 2000,
+  "bio": "While Xiuhtezcatl started speaking about the environment at just age 6, he is now a 19-year-old indigenous activist, musician, and the youth director of Earth Guardians, an organization that trains youth across the world to use civic engagement and the arts to help solve environmental issues. As a hip-hop artist, Xiuhtezcatl also often uses music to convey powerful environmental messages. He is also not afraid to confront the government head-on, as he was one of the 21 plaintiffs that sued the federal government for their lack of action on climate change.",
+  "quote": "My father taught me to see the magic in everything. Growing up, magic was in the sunrise and the rainfall. In every expression of life, no matter how small. I think that that was one of the most valuable wisdom that shaped who I was as a young boy. It gave me the perspective to see what was behind the dysfunction of our society, of our broken world, our dying ecosystems and corrupt leaders.",
+  "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/XMartinez.gif",
+  "twitter": "@xiuhtezcatl"
+}
+```
