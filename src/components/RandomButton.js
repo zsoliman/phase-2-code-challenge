@@ -10,7 +10,7 @@ function RandomButton() {
   return (
     <div className="centered">
       <button onClick={handleClick} id="random-planeteer">
-        Click to Add a Random Planeteer
+        Click to Show a Random Planeteer
       </button>
     </div>
   );
