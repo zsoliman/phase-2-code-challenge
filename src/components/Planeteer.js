@@ -1,22 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Planeteer() {
+// key={planeteer.id}
+// name={planeteer.name}
+// fromUSA={planeteer.fromUSA}
+// born={planeteer.born}
+// bio={planeteer.bio}
+// quote={planeteer.quote}
+// image={planeteer.pictureUrl}
+// twitter={planeteer.twitter}
+
+function Planeteer({name, fromUSA, born, bio, quote, image, twitter}) {
+
+  const [bioDisplay, setBioDisplay] = useState(true)
+
+  const toggleBioQuote = () => {
+    setBioDisplay(!bioDisplay)
+    // console.log(bioDisplay)
+  }
+
+
   return (
     <li className="cards__item">
       <div className="card">
         <img
-          src={"RENDER IMAGE"}
-          alt={"RENDER PERSON NAME"}
+          onClick = {toggleBioQuote}
+          src={image}
+          alt={name}
           className="card__image"
         />
         <div className="card__content">
-          <div className="card__title">{"RENDER NAME"}</div>
-          <p className="card__text">{"CONDITIONALLY RENDER BIO OR QUOTE"}</p>
+          <div className="card__title">{name}</div>
+          {bioDisplay ? (<p className="card__text">Bio: {bio}</p>):(<p className="card__text">Quote: {quote}</p>)
+          }
           <div className="card__detail">
-            <p>{"RENDER TWITTER HANDLE"}</p>
+            <p>{twitter}</p> <br/>
             <p>
               {
-                "CONDITIONALLY RENDER WHETHER THE PERSON IS USA-BASED OR WORKING OVERSEAS"
+                fromUSA ? "From the US!" : "From Abroad!"
               }
             </p>
           </div>
